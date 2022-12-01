@@ -1,4 +1,6 @@
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -22,86 +24,115 @@ body {
   background-image: url(../images/bg_001.jpg);
 }
 
-/* GRID-stuff */
+
 header {
   margin-top: 1rem;
   margin-left: 1rem;
+  
+  
   grid-area: header;
   display: flex;
   justify-content: space-between;
+  
+   .logo img {
+    width: 200px;
+  }
+
+   ul {
+    /* margin-top: 1rem; */
+    margin-right: 1rem;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+  
+
+    :hover { 
+      background-color:lightgray;
+      color: gray;
+    }
+  }  
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 
-header ul {
-  /* margin-top: 1rem; */
-  margin-right: 1rem;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-between;
-}
-ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
 
+
+/* main */
 .left-container {
   display: flex;
   flex-direction: column;
-  grid-area: main;
-}
-
-p {
-  display: flex;
+  justify-content: space-around;
   
+  grid-area: main;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    display: flex;
+  }
 }
 
+
+/* aside */
 .right-container {
   grid-area: aside;
   display: flex;
   justify-content: center;
-}
+  
 
-footer {
-  /* margin-left: 1rem; */
-  grid-area: footer;
-  width: 25%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  img {
+    width: 200px;
+   
+  }
+   
 
-/* main */
-h1 {
-  font-size: 2rem;
-}
-
-/* header */
-nav .logo img {
-  width: 200px;
-}
-
-/* aside */
-img {
-  width: 200px;
 }
 
 /* footer */
-.Learn{
+footer {
+  /* margin-left: 1rem; */
+  grid-area: footer;
+    width: 25%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 6rem;
-  height: 1rem;
-  text-decoration: none;
-  background-color: green;
-  color: white;
+
+  .Learn{
+    display: flex;
+    align-items: center;
+    width: 6rem;
+    height: 1rem;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+  }
+  .Get{
+    display: flex;
+    align-items: center;
+    width: 6rem;
+    height: 1rem;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+  }
 }
-.Get{
-  display: flex;
-  align-items: center;
-  width: 6rem;
-  height: 1rem;
-  text-decoration: none;
-  background-color: blue;
-  color: white;
-}
+
+
+
+
+
+
+
+
+
+
+

@@ -28,16 +28,27 @@ header {
   display: flex;
 }
 
+header .logo img {
+  width: 200px;
+}
+
 header ul {
   width: 50%;
+  height: 20%;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-right: 1rem;
   list-style: none;
   display: flex;
 }
 
-ul li a {
+header ul :hover {
+  color: gray;
+  background-color: #d3d3d3;
+}
+
+header a {
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -45,10 +56,15 @@ ul li a {
 .left-container {
   flex-direction: column;
   grid-area: main;
+  justify-content: space-around;
   display: flex;
 }
 
-p {
+.left-container h1 {
+  font-size: 2rem;
+}
+
+.left-container p {
   display: flex;
 }
 
@@ -56,6 +72,10 @@ p {
   grid-area: aside;
   justify-content: center;
   display: flex;
+}
+
+.right-container img {
+  width: 200px;
 }
 
 footer {
@@ -66,15 +86,7 @@ footer {
   display: flex;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-nav .logo img, img {
-  width: 200px;
-}
-
-.Learn {
+footer .Learn {
   width: 6rem;
   height: 1rem;
   color: #fff;
@@ -84,7 +96,7 @@ nav .logo img, img {
   display: flex;
 }
 
-.Get {
+footer .Get {
   width: 6rem;
   height: 1rem;
   color: #fff;
