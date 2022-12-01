@@ -1,0 +1,16 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Tara025/challenge.git",
+  "author": "Peggy",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.0",
+    "parcel": "^2.8.0"
+  }
+}
